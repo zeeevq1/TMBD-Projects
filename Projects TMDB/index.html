@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>TMDB</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
-  <script src="main.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disney Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="main.js"></script>
+</head>
+<body class="bg-gradient-to-b from-pink-50 via-purple-100 to-white text-gray-800">
+
+  <header class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white py-4 shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="h-8 md:h-10">
+        <span class="text-xl md:text-2xl font-bold">Disney+</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-sm md:text-base font-medium">
+        <a href="#" class="hover:text-yellow-200 transition">Home</a>
+        <a href="#" class="hover:text-yellow-200 transition">Movies</a>
+        <a href="#" class="hover:text-yellow-200 transition">Series</a>
+        <a href="#" class="hover:text-yellow-200 transition">My List</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="h-20"></div>
+
+  <section class="w-full h-[300px] md:h-[500px] overflow-hidden mb-8 rounded-b-lg shadow-xl">
+    <video
+      src="./src/final.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      class="w-full h-full object-cover"
+    ></video>
+  </section>
+
+  <div id="movie-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-6 pb-10">
+  </div>
+
+</body>
 </html>
