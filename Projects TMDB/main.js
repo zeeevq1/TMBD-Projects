@@ -242,11 +242,11 @@ function deleteReviewForMovie(movieId, index) {
   localStorage.setItem(key, JSON.stringify(reviews));
   loadReviewsForMovie(movieId);
 }
-
-//HUA
+// the following part from hua: This function is triggered when the "Random Film" button is clicked
 document.getElementById("random-film-btn").onclick = async function () {
-  const apiKey = "fcb5f9f40d9acdf7af2d8c38ded9bb12";
+  const apiKey = "fcb5f9f40d9acdf7af2d8c38ded9bb12"; // <-- Replace with your TMDB API key
   const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -262,11 +262,12 @@ document.getElementById("random-film-btn").onclick = async function () {
         <h2 class="text-2xl font-bold mb-2">${randomMovie.title}</h2>
         <p class="text-gray-700 mb-2">${randomMovie.release_date}</p>
         <p class="text-gray-600 max-w-md">${randomMovie.overview}</p>
-        <button id="write-comment-btn" class="mt-4 mb-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-800 transition">Write a Comment</button>
+        <button id="write-thoughts-btn" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-800 transition">Write your thoughts</button>
       </div>
     `;
+
     // Add event listener for the new button
-    document.getElementById("write-comment-btn").onclick = function () {
+    document.getElementById("write-thoughts-btn").onclick = function () {
       // Save movie info to localStorage
       localStorage.setItem("selectedMovie", JSON.stringify(randomMovie));
       // Redirect to journal.html
