@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
   <title>Disney Clone</title>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script defer src="main.js"></script>
@@ -274,7 +275,59 @@
       </div>
     </section>
 
-    <footer></footer>
+    <feature class="film-result"> <!--this is film part from hua-->
+      <header class="flex justify-center items-center w-full md:mb-0">
+        <h2 class="text-4xl mt-10 mb-10" style="font-family: 'MuseoModerno', sans-serif; font-weight: 700; font-style: normal;">Filme</h2>
+      </header>
+      <section class="flex flex-row flex-nowrap gap-6 justify-center">
+        <article class="w-64 flex-none"> <img class="w-full" src="https://lumiere-a.akamaihd.net/v1/images/image_9ca31b20.jpeg?region=0,0,540,810&width=160" alt="filmposter of elio"> Elio </article>
+        <article class="w-64 flex-none"> <img  class="w-full" src="https://lumiere-a.akamaihd.net/v1/images/image_c686fc5e.jpeg?region=0,0,540,810&width=160" alt="filmposter of the fantastic four: first steps"> The Fantastic Four: First Steps</article>
+        <article class="w-64 flex-none"> <img class="w-full" src="https://lumiere-a.akamaihd.net/v1/images/image_f88e1482.jpeg?region=0,0,540,810&width=160" alt="filmposter of freakier friday"> freakier-friday</article>
+        <article class="w-64 flex-none"> <img class="w-full" src="https://lumiere-a.akamaihd.net/v1/images/image_b4a0e705.jpeg?region=0,0,540,810&width=160" alt=""filmposter of tron:ares> TRON: Ares</article>
+        <article class="w-64 flex-none"> <img class="w-full" src="https://lumiere-a.akamaihd.net/v1/images/image_e095d101.jpeg?region=0,0,540,810&width=160" alt="filmposter of zomania2"> zoomania-2</article>
+        <article class="w-64 flex-none"> <img class="w-full" src="https://lumiere-a.akamaihd.net/v1/images/image_6691d1ee.jpeg?region=0,0,540,810&width=320" alt="filmposter"> hoppers</article>
+      </section>
+  </feature>
+  <br>
+  <section class="bg-white flex flex-col items-center justify-center rounded-lg px-4 py-8 mx-auto w-full[60vh]"> <!--this is random a film part from hua-->
+    <h1 class="md:text-5xl font-bold text-black text-center mb-8 leading-tight" style="font-family: 'MuseoModerno', sans-serif; font-weight: 700; font-style: normal;">
+      Using your favourite movie to keep record your diary
+    </h1>
+    
+    <div id="film-result" class="mt-6 text-center"></div><button id="random-film-btn" class="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition" style="font-family: 'MuseoModerno', sans-serif; font-weight: 700; font-style: normal;">Random Film
+    <img src="img/randomicon.svg" width="24" height="24" class="inline-block">
+    </button>
+  </section>
+  <br>
+  <section class="w-full"> <!--this part is mehr von disney from hua-->
+    <header class="flex justify-center items-center mb-4 py-4 :mb-0">
+        <h2 lass="text-4xl" style="font-family: 'MuseoModerno', sans-serif; font-weight: 700; font-style: normal;">Mehr von Disney</h2>
+    </header>
+    <div src=" " class="flex flex-col items-center justify-center h-100 bg-blue-700 text-white p-6 rounded-lg shadow-md">
+      jetzt anmelden um mehr über Disney zu erfahren!
+      <button class="bg-white text-black px-4 py-2 rounded hover:bg-blue-100 transition">
+          Sei Teil der Familie
+      </button>
+    </div>
+
+    <footer class="bg-gray-900 text-white mt-16 py-8 px-4"> <!--this is footer from hua-->
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center space-x-3 mb-4 md:mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="h-8">
+        <span class="font-bold text-lg">Disney</span>
+      </div>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <a href="#" class="hover:underline">Datenschutz</a>
+        <a href="#" class="hover:underline">Nutzungsbedingungen</a>
+        <a href="#" class="hover:underline">Impressum</a>
+        <a href="#" class="hover:underline">Hilfe</a>
+        <a href="#" class="hover:underline">Cookie-Einstellungen</a>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-400 mt-6">
+      &copy; 2025 Disney. Alle Rechte vorbehalten.
+    </div>
+  </footer>
 
 
 
