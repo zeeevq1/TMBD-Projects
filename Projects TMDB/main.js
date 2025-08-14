@@ -57,12 +57,12 @@ document.getElementById("random-film-btn").onclick = async function () {
         <h2 class="text-2xl font-bold mb-2">${randomMovie.title}</h2>
         <p class="text-gray-700 mb-2">${randomMovie.release_date}</p>
         <p class="text-gray-600 max-w-md">${randomMovie.overview}</p>
-        <button id="write-comment-btn" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-800 transition">Write a Comment</button>
+        <button id="write-thoughts-btn" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-800 transition">Write your thoughts</button>
       </div>
     `;
 
     // Add event listener for the new button
-    document.getElementById("write-comment-btn").onclick = function () {
+    document.getElementById("write-thoughts-btn").onclick = function () {
       // Save movie info to localStorage
       localStorage.setItem("selectedMovie", JSON.stringify(randomMovie));
       // Redirect to journal.html
